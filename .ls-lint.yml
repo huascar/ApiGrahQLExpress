@@ -1,0 +1,9 @@
+ls:
+  __tests__:
+    .js: point.case
+  src:
+    .js: kebab-case
+  .js: point.case
+ignore:
+  - .git
+  - node_modules

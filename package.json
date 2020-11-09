@@ -1,0 +1,44 @@
+{
+	"name": "rest-api-example",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "Huascar Mamani <h.mamani85@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"date-fns": "^2.16.1",
+		"express": "^4.17.1",
+		"jsonapi-serializer": "^3.6.6",
+		"mysql2": "^2.2.5",
+		"ramda": "^0.27.1",
+		"sequelize": "^6.3.5",
+		"uuid": "^8.3.0",
+		"webpack-node-externals": "^2.5.2"
+	},
+	"scripts": {
+		"start": "yarn webpack -w",
+		"ls:lint": "yarn ls-lint",
+		"lint:fix": "eslint --fix ./src",
+		"test": "jest --coverage",
+		"test:watch": "jest --watch"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.11.6",
+		"@babel/plugin-transform-runtime": "^7.11.5",
+		"@babel/preset-env": "^7.11.5",
+		"@ls-lint/ls-lint": "^1.9.2",
+		"babel-loader": "^8.1.0",
+		"eslint": "^7.10.0",
+		"eslint-config-prettier": "^6.12.0",
+		"eslint-plugin-jest": "^24.0.2",
+		"eslint-plugin-prettier": "^3.1.4",
+		"faker": "^5.1.0",
+		"husky": "^4.3.0",
+		"jest": "^26.4.2",
+		"nodemon-webpack-plugin": "^4.3.2",
+		"prettier": "^2.1.2",
+		"webpack": "^4.44.2",
+		"webpack-cli": "^3.3.12",
+		"webpack-livereload-plugin": "^2.3.0"
+	}
+}
